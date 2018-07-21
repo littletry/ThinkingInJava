@@ -208,4 +208,54 @@ public class AllOps {
         float f = (float)x;
         double d = (double)x;
     }
+    static void intTest(int x, int y) {
+        //Arithmetic operators
+        x = x * y;
+        x = x / y;
+        x = x % y;
+        x = x + y;
+        x = x - y;
+        x++;
+        x--;
+        x = +y;
+        x = -y;
+        //Relational and logical
+        f(x > y);
+        f(x >= y);
+        f(x < y);
+        f(x <= y);
+        f(x == y);
+        f(x != y);
+//        f(!x);
+//        f(x && y);
+//        f(x || y);
+        //Bitwise operators
+        x = ~y;
+        x = x & y;
+        x = x | y;
+        x = x ^ y;
+        x = x << 1;
+        x = x >> 1;
+        x = x >>> 1;
+        //Compound assignment
+        x += y;
+        x -= y;
+        x *= y;
+        x /= y;
+        x %= y;
+        x <<= 1;
+        x >>= 1;
+        x >>>= 1;
+        x &= y;
+        x ^= y;
+        x |= y;
+        //Casting
+//        boolean bl = (boolean)x;
+        char c = (char)x;
+        byte b = (byte)x;
+        short s = (short)x;
+        long l = (long)x;
+        float f = (float)x;
+        double d = (double)x;
+    }
 }
