@@ -58,5 +58,54 @@ public class AllOps {
 //        float f = (float)x;
 //        double d = (double)x;
     }
-
+    static void charTest(char x, char y) {
+        //Arithmetic operators 算术运算符
+        x = (char)(x * y);
+        x = (char)(x / y);
+        x = (char)(x % y);
+        x = (char)(x + y);
+        x = (char)(x - y);
+        x++;
+        x--;
+        x = (char)+y;
+        x = (char)-y;
+        //Relational and logical 关系逻辑
+        f(x > y);
+        f(x >= y);
+        f(x < y);
+        f(x <= y);
+        f(x == y);
+        f(x != y);
+//        f(!x);
+//        f(x && y);
+//        f(x || y);
+        //Bitwise operators 位操作符
+        x = (char)~y;
+        x = (char)(x & y);
+        x = (char)(x | y);
+        x = (char)(x ^ y);
+        y = (char)(x << 1);
+        y = (char)(x >> 1);
+        y = (char)(x >>> 1);
+        //Compound assignment
+        x += y;
+        x -= y;
+        x *= y;
+        x /= y;
+        x %= y;
+        x <<= 1;
+        x >>= 1;
+        x >>>= 1;
+        x &= y;
+        x ^= y;
+        x |= y;
+        //Casting
+//        boolean bl = (boolean)x;
+        byte b = (byte)x;
+        short s = (short)x;
+        int i = (int)x;
+        long l = (long)x;
+        float f = (float)x;
+        double d = (double)x;
+    }
 }
