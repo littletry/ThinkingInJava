@@ -43,8 +43,8 @@ public class AllOps {
 //        x *= y;
 //        x /= y;
 //        x %= y;
-//        x <<= y;
-//        x >>= y;
+//        x <<= 1;
+//        x >>= 1;
 //        x >>>= 1;
         x &= y;
         x ^= y;
@@ -134,18 +134,18 @@ public class AllOps {
         x = (byte)(x & y);
         x = (byte)(x | y);
         x = (byte)(x ^ y);
-        x = (byte)(x << y);
-        x = (byte)(x >> y);
-        x = (byte)(x >>> y);
+        x = (byte)(x << 1);
+        x = (byte)(x >> 1);
+        x = (byte)(x >>> 1);
         //Compound assignment 复合赋值
         x += y;
         x -= y;
         x *= y;
         x /= y;
         x %= y;
-        x <<= y;
-        x >>= y;
-        x >>>= y;
+        x <<= 1;
+        x >>= 1;
+        x >>>= 1;
         x &= y;
         x ^= y;
         x |= y;
@@ -153,6 +153,56 @@ public class AllOps {
 //        boolean bl = (boolean)x;
         char c = (char)x;
         short s = (short)x;
+        int i = (int)x;
+        long l = (long)x;
+        float f = (float)x;
+        double d = (double)x;
+    }
+    static void shortTest(short x, short y) {
+        //Arithmetic operators
+        x = (short)(x * y);
+        x = (short)(x / y);
+        x = (short)(x % y);
+        x = (short)(x + y);
+        x = (short)(x - y);
+        x++;
+        x--;
+        x = (short)+y;
+        x = (short)-y;
+        //Relational and logical
+        f(x > y);
+        f(x >= y);
+        f(x < y);
+        f(x <= y);
+        f(x == y);
+        f(x != y);
+//        f(!x);
+//        f(x && y);
+//        f(x || y);
+        //Bitwise operators
+        x = (short)~y;
+        x = (short)(x & y);
+        x = (short)(x | y);
+        x = (short)(x ^ y);
+        x = (short)(x << 1);
+        x = (short)(x >> 1);
+        x = (short)(x >>> 1);
+        //Compound assignment
+        x += y;
+        x -= y;
+        x *= y;
+        x /= y;
+        x %= y;
+        x <<= 1;
+        x >>= 1;
+        x >>>= 1;
+        x &= y;
+        x ^= y;
+        x |= y;
+        //Casting
+//        boolean bl = (boolean)x;
+        char c = (char)x;
+        byte b = (byte)x;
         int i = (int)x;
         long l = (long)x;
         float f = (float)x;
