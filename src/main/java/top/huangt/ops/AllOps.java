@@ -87,7 +87,7 @@ public class AllOps {
         y = (char)(x << 1);
         y = (char)(x >> 1);
         y = (char)(x >>> 1);
-        //Compound assignment
+        //Compound assignment 复合赋值
         x += y;
         x -= y;
         x *= y;
@@ -99,9 +99,59 @@ public class AllOps {
         x &= y;
         x ^= y;
         x |= y;
-        //Casting
+        //Casting 强转
 //        boolean bl = (boolean)x;
         byte b = (byte)x;
+        short s = (short)x;
+        int i = (int)x;
+        long l = (long)x;
+        float f = (float)x;
+        double d = (double)x;
+    }
+    static void byteTest(byte x, byte y) {
+        //Arithmetic operators 算术运算符
+        x = (byte)(x * y);
+        x = (byte)(x / y);
+        x = (byte)(x % y);
+        x = (byte)(x + y);
+        x = (byte)(x - y);
+        x++;
+        x--;
+        x = (byte)+ y;
+        x = (byte)- y;
+        //Relational and logical 关系逻辑
+        f(x > y);
+        f(x >= y);
+        f(x < y);
+        f(x <= y);
+        f(x == y);
+        f(x != y);
+//        f(!x);
+//        f(x && y);
+//        f(x || y);
+        //Bitwise operators 位操作符
+        x = (byte)~y;
+        x = (byte)(x & y);
+        x = (byte)(x | y);
+        x = (byte)(x ^ y);
+        x = (byte)(x << y);
+        x = (byte)(x >> y);
+        x = (byte)(x >>> y);
+        //Compound assignment 复合赋值
+        x += y;
+        x -= y;
+        x *= y;
+        x /= y;
+        x %= y;
+        x <<= y;
+        x >>= y;
+        x >>>= y;
+        x &= y;
+        x ^= y;
+        x |= y;
+        //Casting 强转
+//        boolean bl = (boolean)x;
+        char c = (char)x;
         short s = (short)x;
         int i = (int)x;
         long l = (long)x;
